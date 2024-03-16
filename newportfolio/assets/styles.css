@@ -1,0 +1,144 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.titley {
+  font-style: italic;
+  background-color: #d3b0e0; /* Lavender background color */
+}
+
+/* Basic styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #d3b0e0, #f0e6f0); /* Gradient background */
+  color: #333333; /* Dark font color */
+  margin: 0; /* Remove default body margin */
+}
+
+header {
+  position: fixed; /* Fixed positioning */
+  top: 10px; /* Align header to the top of the viewport */
+  left: 0; /* Align header to the left edge of the viewport */
+  width: 100%; /* Set header width to full viewport width */
+  background-color: #d3b0e0; /* Pastel purple color */
+  color: #000000; /* White font color */
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+  border-radius: 90px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+}
+
+/* Add padding to body to prevent content from being obscured by the fixed header */
+body {
+  padding-top: 70px; /* Adjust this value according to the height of your header */
+}
+
+header:hover {
+  transform: translateY(-5px); /* Move header up by 5px on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #333333;
+  text-decoration: none;
+}
+
+section {
+  padding: 50px 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.text {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.text h2 {
+  font-size: 28px; /* Increased font size */
+  margin-bottom: 20px;
+  color: #7e549f; /* Darker lavender color */
+}
+
+.text p {
+  font-size: 18px; /* Increased font size */
+  line-height: 1.8; /* Increased line height */
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  background-image: url('profile.jpeg'); /* Replace 'your-image-url.jpg' with the URL of your circular profile image */
+  background-size: cover;
+  background-position: center;
+  border-radius: 250px;
+}
+
+.footer {
+  background-color: #f6f2f7; /* Light lavender background color */
+  padding: 20px;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  margin-top: 20px;
+  padding: 15px 30px; /* Increased padding */
+  background-color: #7e549f; /* Darker lavender button color */
+  color: #ffffff; /* White font color */
+  border: none;
+  border-radius: 30px; /* Increased border radius */
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #a67eb8; /* Lighter lavender button color */
+}
+
+/* Define styles for the spark effect */
+@keyframes spark {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+.spark {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ffcc00; /* Yellow color for spark */
+  border-radius: 50%;
+  pointer-events: none; /* Ensure sparks don't interfere with mouse events */
+  z-index: 9999; /* Ensure sparks appear on top of other content */
+  animation: spark 0.5s ease-out forwards;
+}

@@ -1,0 +1,70 @@
+/* learnmore-styles.css */
+
+/* learnmore-styles.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(135deg, #ffcccc, #cc99ff);
+    color: #333333;
+  }
+  
+  header {
+    background-color: #8a3ab9;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Rest of the styles remain the same */
+  
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  
+  .text {
+    margin-bottom: 20px;
+  }
+  
+  .text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8a3ab9;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #6a2475;
+  }
+  

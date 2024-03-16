@@ -1,0 +1,54 @@
+/* contact-styles.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(135deg, #ffcccc, #cc99ff);
+    color: #333333;
+  }
+  
+  header {
+    background-color: #8a3ab9;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  
+  .contact-info {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .emails {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .email {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .email:hover {
+    color: #8a3ab9;
+  }
+  
